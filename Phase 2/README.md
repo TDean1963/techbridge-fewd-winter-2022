@@ -13,3 +13,4 @@ DemoBookStore
       Conceptionally creating the main page that will house all the book information/user information from Phase 1. HTML/CSS has begun but does not fully ressemble phase 1 as I          have to replace some assets. Beginning code based on class code used to "find the zoomer", I would like the books to have a similar layout to that example.
       
  
+Nots: Set up the web pages/Git desktop but not sure if it is working correctly
