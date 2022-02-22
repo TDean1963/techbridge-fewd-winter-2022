@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rare Book List</title>
+    <style>
+        body{
+     background-color: #301008;
+     position: absolute;
+  background-image: url("library.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: overlay;
+ 
+}
+      /* styling for the rows */
+      .row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+
+      /* styling for the columns */
+      .column {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          flex: 1;
+          border: 1px solid black;
+      }
+
+       /* styling for the names */
+       .zName {
+          color: white;
+          text-align: center;
+          background-color: gray;
+      }
+
+      /* styling for the images */
+      .zImage {
+          height: 50px;
+      }
+      </style>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <div id="controls" class="controls">
+        <label for="tbTextToFind" id="label1" class="cLabel"></label>
+        <input type="text" id="tbTextToFind" placeholder="Find Entry" />
+        <button id="btnFindIt" onclick="findInList();">Search Directory</button>
+        <button id="Reset" onclick="resetFindInList();">Reset</button> 
+        <br>
+    </div>
+    <!-- <div id="books">
+        <div id="book1" class="column">
+            <div class="column">
+                <img id="img1-1" class="books"  src="zoomPhoto-1-1.jpg" alt="Photo 1-1">
+                <span id ="span1-1" class="bookname">Book 1 Name</span>
+            </div>
+        </div>
+        <div id="book1" class="column">
+          <div class="column">
+              <img id="img1-1" class="books"  src="zoomPhoto-1-1.jpg" alt="Photo 1-1">
+              <span id ="span1-1" class="bookname">Book 1 Name</span>
+          </div>
+      </div>
+    </div> -->
+    <div id="booklist">
+      <div id="row1" class="row">
+          <div class="column">
+              <img id="img1-1" class="zImage"  src="zoomPhoto-1-1.jpg" alt="Photo 1-1">
+              <span id ="span1-1" class="zName">Photo 1-1's Name</span>
+          </div>
+          <div class="column">
+              <img id="img1-2" class="zImage"  src="zoomPhoto-1-2.jpg" alt="Photo 1-2">
+              <span id ="span1-2" class="zName">Photo 1-2's Name</span>
+          </div>
+          <div class="column">
+              <img id="img1-3" class="zImage"  src="zoomPhoto-1-3.jpg" alt="Photo 1-3">
+              <span id ="span1-3" class="zName">Photo 1-3's Name</span>
+          </div>
+          <div class="column">
+              <img id="img1-4" class="zImage"  src="zoomPhoto-1-4.jpg" alt="Photo 1-4">
+              <span id ="span1-4" class="zName">Photo 1-4's Name</span>
+          </div>
+          <div class="column">
+              <img id="img1-5" class="zImage"  src="zoomPhoto-1-5.jpg" alt="Photo 1-5">
+              <span id ="span1-5" class="zName">Photo 1-5's Name</span>
+          </div>
+      </div>
+      <div id="row2" class="row">
+          <div class="column">
+              <img id="img2-1" class="zImage"  src="zoomPhoto-2-1.jpg" alt="Photo 2-1">
+              <span id ="span2-1" class="zName">Photo 2-1's Name</span>
+          </div>
+          <div class="column">
+              <img id="img2-2" class="zImage"  src="zoomPhoto-2-2.jpg" alt="Photo 2-2">
+              <span id ="span2" class="zName">Photo 2-2's Name</span>
+          </div>
+          <div class="column">
+              <img id="img2-3" class="zImage"  src="zoomPhoto-2-3.jpg" alt="Photo 2-3">
+              <span id ="span2-3" class="zName">Photo 2-3's Name</span>
+          </div>
+          <div class="column">
+              <img id="img2-4" class="zImage"  src="zoomPhoto-2-4.jpg" alt="Photo 2-4">
+              <span id ="span2-4" class="zName">Photo 2-4's Name</span>
+          </div>
+          <div class="column">
+              <img id="img2-5" class="zImage"  src="zoomPhoto-2-5.jpg" alt="Photo 2-5">
+              <span id ="span2-5" class="zName">Photo 2-5's Name</span>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
