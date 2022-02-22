@@ -1,0 +1,188 @@
+
+/* input[type=text] {
+width: 100%;
+padding: 3px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+input[type=text]:focus {
+background-color: lightblue;
+}*/
+body{
+  background-color: #301008;
+  position: absolute;
+  background-image: url("library.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: overlay;
+ 
+}
+
+header{
+  background-color: #301008;
+  padding: 8px;
+  margin-bottom: 40px;
+  box-sizing:content-box;
+  resize: vertical;
+  text-align: center;
+  color: aliceblue;
+  font-size:  30px;
+  
+}
+
+footer{
+  background-color: #301008;
+  padding: 8px;
+  box-sizing:content-box;
+  resize: vertical;
+  text-align: center;
+  color: aliceblue;
+  font-size:  30px;
+  
+}
+
+form {
+    margin: 10%;
+    border-style: groove;
+    background-color: #f4d8ae;
+    resize: vertical;
+    box-shadow: #301008 30px;
+  }
+  #useerinfo{
+    align-content: center;
+    margin-bottom:  30px;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  #user{
+    align-content: center;
+    padding: 10px,10px,10px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+label {
+    width: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 1px;
+    border: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    text-align: center;
+    font-size: x-large;
+    background-color: #b6c48e;
+
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 30px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-sizing:border-box;
+resize: vertical;
+}
+
+input[type=password], select, textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-sizing: border-box;
+resize: vertical;
+
+}
+
+#roles {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing:border-box;
+  resize: vertical;
+  }
+
+.signin{
+  width: auto;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  resize: both;
+}
+button{
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    resize: vertical;
+    
+}
+.registeruser{
+  background-color: #dc7027;
+  color: #f4d8ae;
+  font-size:  30px;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit{
+  width: auto;
+  background-color: #06921d;
+  color: #f2f2f2;
+}
+.forgotlogin{
+  font-style: oblique;
+}
+
+p{
+  text-align: center;
+  font-style: italic;
+}
+
+#cancel{
+  background-color: #06921d; display: inline-block; padding: 14px,25px; color: azure;
+}
+#cancel:link {
+  color:azure; background-color: #dc7027; width: 100%; border-style: groove;
+border-radius: 10px;
+}
+#cancel:visited {
+  color: azure; background-color: #dc7027;
+}
+#cancel:hover {
+  color: azure; background-color: #301008;
+}
+#cancel:active {
+   color: #b6c48e;
+}
+
+#regsign {
+  width: auto;
+  display: inline-block;
+  background-color: forestgreen;
+  width: auto;
+  color: aliceblue;
+  font-size:  30px;
+  
+}
+#cancel1{
+  width: auto;
+  display: inline-block;
+  background-color: rgb(122, 126, 122);
+  width: auto;
+  color: aliceblue;
+  font-size:  30px;
+}

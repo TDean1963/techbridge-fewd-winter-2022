@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css"></link>
+        </head>
+        <!--<link rel="stylesheet" href="style.css"></link>
+    
+    
+        <h1>Add Book Entry</h1>
+        <div class="entryForm">
+            <form id="entryform">    
+            <label id="bookTitle">Book Title</label><input type="text" placeholder="BookTitle" name="bookTitle"><br>  
+            <label for="bookAuthor">Author</label><input type="text" placeholder="Author" name="author"><br>
+            <label for="bookyear">Year Published</label><input type="text" placeholder="Year Published" name="bookyear"><br>
+            <label for="price">Price</label><input type="text" placeholder="Price" name="price"><br>
+            <label for="location">Location</label><input type="text" placeholder="Location" name="location"><br>
+            <label for="copies"># of Copies</label><input type="text" placeholder="copies" name="copies"><br>
+            <label for="condition">Condition</label><input type="text" placeholder="condition" name="condition"><br>
+            <label>Genere</label><p>Select all that apply.</p>
+            
+            <div class="genre" name="Genre">
+                
+                <input  type="checkbox" name="horror">Horror</input><input  type="checkbox" name="mystery">Mystery</input><input  type="checkbox" name="nonfiction">Non Fiction</input><br>
+                <input  type="checkbox" name="fantasy">Fantasy</input><input  type="checkbox" name="fiction">Fiction</input><input  type="checkbox" name="documentary">Documentary</input><br>
+                <input  type="checkbox" name="sciencefiction">Science Fiction</input><input  type="checkbox" name="biography">Biography</input><input  type="checkbox" name="comedy">Comedy</input><br>
+                <input  type="checkbox" name="children">Children</input><input  type="checkbox" name="poetry">Poetry</input><input  type="checkbox" name="horror">Art</input>
+            </div>  
+        </div>    
+    -->
+    <body>
+
+<div class="container">     
+    <h1> New Book Entry</h1>
+    <p><b> To enter new inventory or new book selection follw the following steps.</b>
+        <ol><li>Enter the book information into the following prompt.</li>
+        <li>Once prompt is completed slect Preview Entry to confirm your entries</li>
+        <li>Once the preview has been confirmed, select Add Entry</lil></ol>
+    </p>
+<form id="form1">
+            <div class="row">
+            <div class="col-25">
+              <label for="title">Title</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="title" name="bookTitle" placeholder="Book Title">
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="author">Author</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="author" name="bookAuthor" placeholder="Book author">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="dateaquired">Date Acquired</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" class="dacq" name="dateAcquired" placeholder="Date Acquired">
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-25">
+                          <label for="location">Location</label>
+                    </div>
+                     <div class="col-75">
+                          <input type="text" id="location" name="location" placeholder="Store Number">
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="title">Title</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="datepub" name="datepublished" placeholder="Date Published">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="condition">Condition</label>
+                        </div>
+                   <div class="col-75">
+                    <select name="condition" id="condition">
+                        <option placeholder="poor">Select One</option>
+                        <option value="poor">Poor</option>
+                        <option value="fair">Fair</option>
+                        <option value="good">Good</option>
+                        <option value="great">Great</option>
+                        <option value="mint">Mint</option>
+                    </select>
+                   </div>
+                      </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="copies">Number of Copies</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="copies" name="copies" placeholder="Number of Copies">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="price">Retail Price</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="price" name="price" placeholder="Price">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                          <label for="Genre">Genre</label>
+                        </div>
+                        <div class="col-75">
+                            <fieldset class="checkbox" itemid="checkbox">
+                                <p>select all that apply.</p>
+                                <input type="checkbox"> Action
+                                <input type="checkbox"> Adventure</label>
+                                <input type="checkbox"> Autobiography</label>
+                                <input type="checkbox"> Biography</label>
+                                <input type="checkbox"> Comedy</label>
+                                <input type="checkbox"> Fantasy</label>
+                                <input type="checkbox"> Fiction</label>
+                                <input type="checkbox"> History</label>
+                                <input type="checkbox"> Horror</label>
+                                <input type="checkbox"> Horror</label>
+                                <input type="checkbox"> Mystery</label>
+                                <input type="checkbox"> NonFiction</label>
+                                <input type="checkbox"> Comedy</label>
+                                <input type="checkbox"> Fantasy</>
+                                <input type="checkbox"> Religion>
+                               <input type="checkbox" value="selfHelp"> Self Help
+                        </fieldset>
+                        <div class="rowafter"></div>
+                       
+                    <div class="row">
+                        <input type="button" id="cancel" value="Cancel Entry" onclick="alert('Hello World!')"> </input>
+                        <input type="submit" value="Preview Entry">
+                        
+                 </div>
+
+    </form> 
+</div> <!--     
+    **Genres are repeatable, depending on the preference of user, can combine genres
+
+    This is the first option to cover genres, these are checker boxes 
+    
+    <div class="Genrelist">
+            <input type="checkbox" id="Horror" value="Horror">Horror</input>
+            <input type="checkbox" id="Fantasy" value="Fantasy">Fantasy</input>
+            <input type="checkbox" id= "Drama" value="Drama" >Drama</input>
+            <input type="checkbox" id="Biography/AutoBiography" value="Biography/Autobiography">Biography/Autobiography</input>
+            <input type="checkbox" id="Action/Adventure" value="Action Adventure">Action</input><br>
+            <input type="checkbox" id="Sci-Fi" value="Sci-Fi">Sci-Fi</input>
+            <input type="checkbox" id="Fable" value="Fable">Fable</input>
+            <input type="checkbox" id="History" value="History">History</input>
+            <input type="checkbox" id="Comedy" value="Comedy">Comedy</input>
+            <input type="checkbox" id="Mystery/Thriller" value="Mystery/Thriller">Mystery/Thriller</input>
+            <input type="checkbox" id="Self Help" value="Self Help">Self Help</input><br>
+            <input type="checkbox" id="Children" value="Children">Children</input>
+            <input type="checkbox" id="Non-Fiction" value="Non-Fiction">Non-Fiction</input>
+            <input type="checkbox" id="Fiction" value="Fiction">Fiction</input><input type="checkbox" id="Travel" value="Travel">Travel</input>  
+        </div> --> 
+
+        <!-- this is the second option for genre list. selection dots
+
+        <input type="radio" id="Horror" name="genretype" value="Horror">
+        <label for="Horror">Horror</label>
+        <input type="radio" id="Drama" name="genretype" value="Drama">
+        <label for="Drama">Drama</label>
+        <input type="radio" id="Action" name="genretype" value="Action">
+        <label for="Action">Action</label>
+        <input type="radio" id="Fantasy" name="genretype" value="Fantasy">
+        <label for="Fantasy">Fantasy</label>
+        <input type="radio" id="Biography" name="genretype" value="Biography">
+        <label for="Biography">Biography</label>
+        <input type="radio" id="Comedy" name="genretype" value="Comedy">
+        <label for="Comedy">Comedy</label><br><br>
+-->
+        <!--<label for="Genre">Genre</label><br>-->
+   
+</form>
+    </body>
+</html>
